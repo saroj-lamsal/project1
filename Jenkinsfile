@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                bat 'javac jenkins.java'
+                bat 'python deploy.py'
             }
         }
          stage('output') {
             steps {
-                bat 'java test'
+                echo "hello hi"
             }
         }
         
